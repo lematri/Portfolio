@@ -43,18 +43,17 @@ def process_subject(mat_path, window_size=50, step_size=25, target_labels=[0, 5,
 
     return features[balanced_indices], window_labels[balanced_indices]
 
-# --- Load training subjects (1 and 2) ---
-X1, y1 = process_subject('s1.mat/S1_A1_E2.mat')
-X2, y2 = process_subject('s2.mat/S2_A1_E2.mat')
+X1, y1 = process_subject('s2.mat/S2_A1_E2.mat')
+X2, y2 = process_subject('s3.mat/S3_A1_E2.mat')
 
 X_train = np.concatenate([X1, X2])
 y_train = np.concatenate([y1, y2])
 
-# --- Load test subject (3) — completely unseen during training ---
-X_test, y_test = process_subject('s3.mat/S3_A1_E2.mat')
+# --- Load test subject (4) — completely unseen during training ---
+X_test, y_test = process_subject('s4.mat/S4_A1_E2.mat')
 
-print("Training samples (subjects 1+2):", X_train.shape[0])
-print("Test samples (subject 3, unseen):", X_test.shape[0])
+print("Training samples (subjects 2+3):", X_train.shape[0])
+print("Test samples (subject 4, unseen):", X_test.shape[0])
 
 np.save('X_train_multi.npy', X_train)
 np.save('y_train_multi.npy', y_train)
