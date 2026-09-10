@@ -52,8 +52,7 @@ Random Forest outperformed SVM by ~8 points, consistent with its handling of the
 |Open hand|    1      |  1     |    1     |
 | Fist    |    1      | 0.94   |   0.97   |
 
-![Confusion Matrix - Single Subject]
-(single%20subject%20data/confusion_matrix.png)
+![Confusion Matrix - Single Subject](single%20subject%20data/confusion_matrix.png)
 
 **5-Fold Cross-Validation:** to check the result wasn't a lucky split, 5-fold cross validation ran on the same data:
 
@@ -73,8 +72,7 @@ Accuracy dropped from 97.92% to **67%**:
 | Open hand | 0.71 | 0.04 | 0.08 |
 | Fist | 0.54 | 0.97 | 0.70 |
 
-![Confusion Matrix - Cross-Subject]
-(multiple%20subjects%20data/confusion_matrix_multi_subject.png)
+![Confusion Matrix - Cross-Subject](multiple%20subjects%20data/confusion_matrix_multi_subject.png)
 
 Rest and Fist transferred across subjects; Open Hand was almost never identified correctly (recall = 0.04), mostly misclassified as Fist.
 
