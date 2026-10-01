@@ -2,7 +2,7 @@
 
 First year engineering project, University of Kent
 
-![Finished mechanical gripper](physical mechanical gripper sysytem.png)
+![Finished mechanical gripper] https://github.com/leilaelmateri/Portfolio/blob/main/mechanical_gripper_system.ino/PCB%20schematic%20.png
 
 ## Summary
 - **Gripper:** servo-driven gripper with geared arms, a wooden chassis and 3D printed tips
