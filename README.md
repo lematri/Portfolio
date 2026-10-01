@@ -94,5 +94,5 @@ Industry roles and graduate study in:
 
 ## Contact
 
-- Email: le.matri@icloud.com
+- Email: le.matri@outlook.com
 - LinkedIn: https://www.linkedin.com/in/leila-elmatri-355023308?utm_source=share_via&utm_content=profile&utm_medium=member_ios 
