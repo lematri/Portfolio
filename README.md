@@ -1,5 +1,5 @@
 
-# Leila El Matri - Engineering Portfolio
+# Leila Elmatri - Engineering Portfolio
 
 Biomedical Engineering undergraduate at the University of Kent, with interests in robotics, embedded systems, sensing and medical devices.
 
