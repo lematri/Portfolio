@@ -2,7 +2,7 @@
 
 First year engineering project, University of Kent
 
-![Finished mechanical gripper](physical_mechanical_gripper_sysytem_.png)
+![Finished mechanical gripper](physical mechanical gripper sysytem.png)
 
 ## Summary
 - **Gripper:** servo-driven gripper with geared arms, a wooden chassis and 3D printed tips
@@ -45,7 +45,7 @@ First year engineering project, University of Kent
 ## PCB Schematic
 The schematic covers the switches, OLED, servo, buzzer, force sensor, LEDs and a relay circuit, with two headers that mate onto the microcontroller board.
 
-![PCB schematic](PCB_schematic_.png)
+![PCB schematic](PCB schematic.png)
 
 ## Files
 - `mechanical_gripper_main_1.ino`: main code (buttons, force sensor, OLED and buzzer)
