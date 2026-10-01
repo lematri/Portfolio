@@ -1,27 +1,33 @@
 # Mechanical Hand Gripper with Force Sensing
 
-First year engineering project, University of Kent
+Individual First year engineering project, University of Kent
 
-![Finished mechanical gripper] 
+![Finished mechanical gripper](physical%20mechanical%20gripper%20system%20.png)
 
 ## Summary
 - **Gripper:** servo-driven gripper with geared arms, a wooden chassis and 3D printed tips
 - **Force sensing:** a force sensitive resistor (FSR) measures grip force
 - **Feedback:** force reading and grip level shown on an OLED screen, with a buzzer warning above a set force
 - **Control:** two push buttons to open and close the gripper
-- **Bluetooth (advanced functionality):** open when 0 is presed and close the gripper when 1 is pressed from a android device , with grip force sent back over Bluetooth
-- **PCB:** PCB mounted onto the back of the mechanical grpper designed to connect the sensors, buttons, buzzer, LEDs, servo and relay to the microcontroller board
+- **Bluetooth (advanced functionality):** the gripper opens when `0` is sent and closes when `1` is sent from an Android device, with grip force sent back over Bluetooth
+- **PCB:** PCB mounted onto the back of the mechanical gripper, designed to connect the sensors, buttons, buzzer, LEDs, servo and relay to the microcontroller board
 
+## My Role
+- Designed the PCB schematic and layout, connecting the sensors, buttons, buzzer, LEDs, servo and relay to the microcontroller
+- Designed the gripper arms and full assembly in Fusion 360. My parts weren't manufactured in time, as a result the final build used kit arms provided by the university
+- Wrote the Arduino code for both the main version and the Bluetooth version
+- Added Bluetooth control as advanced functionality, so the gripper can be operated from an Android device
+- Assembled, wired and tested the finished gripper
 
 ## Hardware
-- Arduino [model]
+- Arduino Uno
 - Servo motor
 - Force sensitive resistor
-- 0.96 OLED display
+- 0.96 inch OLED display
 - Piezo buzzer, LEDs and 2 push buttons
 - Relay circuit on the PCB
-- Bluetooth module, used in the Bluetooth version
-- Wooden chassis with geared gripper arms 
+- Bluetooth module
+- Wooden chassis with geared gripper arms
 
 ## How It Works
 
@@ -45,21 +51,15 @@ First year engineering project, University of Kent
 ## PCB Schematic
 The schematic covers the switches, OLED, servo, buzzer, force sensor, LEDs and a relay circuit, with two headers that mate onto the microcontroller board.
 
-![PCB schematic](PCB schematic.png)
+![PCB schematic](PCB%20schematic%20.png)
 
-## Files
-- `mechanical_gripper_main_1.ino`: main code (buttons, force sensor, OLED and buzzer)
-- `bluetoothinterface.ino`: Bluetooth control code
-- `Mechanical_gripper_assembled.f3z`: full Fusion 360 assembly
-- `PCB_schematic_.png`: PCB schematic
-- `physical_mechanical_gripper_sysytem_.png`: photo of the finished gripper
 
 ## How to Run
 - Open either `.ino` file in the Arduino IDE (the IDE will ask to put it in a folder with the same name, click OK)
-- Install the Servo.h,Softwareserial.h, Adafruit GFX and Adafruit SSD1306 libraries from the Library Manager
+- Install the Adafruit GFX and Adafruit SSD1306 libraries from the Library Manager (Servo and SoftwareSerial are already built into the Arduino IDE)
 - Select your board and port, then upload
 - Open the serial monitor at 9600 baud to see the force readings
 - For the Bluetooth version, pair with the Bluetooth module and send `0` or `1` from a Bluetooth serial terminal app
-- To view the CAD, open `Mechanical_gripper_assembled.f3z` in Fusion 360
+- To view the CAD, open `Mechanical gripper assembled.f3z` in Fusion 360360
 
 
