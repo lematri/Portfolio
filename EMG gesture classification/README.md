@@ -85,6 +85,16 @@ The Open Hand failure may not be pure inter-subject variability.Though, It had t
 so the model may have had less data to learn robust, subject-invariant features for this gesture, a data scarcity confound, not necessarily a signal variability one. 
 Separating these two explanations requires a larger, more balanced dataset.
 
+## How to Run
+Install:
+pip install numpy scipy scikit-learn matplotlib
+Download Ninapro DB1 subject data from the official Ninapro website.
+- `single subject data/load_emg_data.py` — preprocess and visualize Subject 1's data
+- `single subject data/train_classifier.py` — train and evaluate the single-subject classifier
+- `single subject data/cross_validation.py` — verify result stability
+- `multiple subjects data/train_multi_subject_code.py` — build the cross-subject dataset
+- `multiple subjects data/train_multi_subject_classifier.py` — train and evaluate cross-subject generalization
+
 ## Limitations
 - **Small dataset:** cross-validation confirmed stability (95.36% ± 2.44%), but 237 total windows remains small by ML standards
 - **Limited gesture set:** 3 gestures, fewer than practical prosthetic control requires
@@ -92,19 +102,13 @@ Separating these two explanations requires a larger, more balanced dataset.
 - **Confounded generalization result:** Open Hand's failure may reflect data scarcity as much as inter-subject variability (see Discussion)
 
 ## Future Work
-- More subjects, to separate data scarcity from genuine inter-subject variability
+- More subjects, to separate data scarcity from genuine inter subject variability
 - A larger gesture set
-- Per subject feature normalization to reduce inter-subject variability
+- Per subject feature normalisation to reduce inter subject variability
 - Hardware simulation (ESP32 + servo gripper) for active gesture to actuation control
 
-## How to Run
-Install:
-pip install numpy scipy scikit-learn matplotlib
+## References
+Atzori, M., Gijsberts, A., Castellini, C., Caputo, B., Mittaz Hager, A.-G., Elsig, S., Giatsidis, G., Bassetto, F. and Müller, H. (2014) 'Electromyography data for non-invasive naturally-controlled robotic hand prostheses', *Scientific Data*, 1, 140053. https://doi.org/10.1038/sdata.2014.53
 
+Atzori, M., Gijsberts, A., Kuzborskij, I., Elsig, S., Mittaz Hager, A.-G., Deriaz, O., Castellini, C., Müller, H. and Caputo, B. (2015) 'Characterization of a benchmark database for myoelectric movement classification', *IEEE Transactions on Neural Systems and Rehabilitation Engineering*, 23(1), pp. 73-83. https://doi.org/10.1109/TNSRE.2014.2328495
 
-Download Ninapro DB1 subject data from the official Ninapro website.
-- `single subject data/load_emg_data.py` — preprocess and visualize Subject 1's data
-- `single subject data/train_classifier.py` — train and evaluate the single-subject classifier
-- `single subject data/cross_validation.py` — verify result stability
-- `multiple subjects data/train_multi_subject_code.py` — build the cross-subject dataset
-- `multiple subjects data/train_multi_subject_classifier.py` — train and evaluate cross-subject generalization
