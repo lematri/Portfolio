@@ -1,24 +1,23 @@
 
 # Leila Elmatri - Engineering Portfolio
 
-Biomedical Engineering undergraduate at the University of Kent, with interests in robotics, embedded systems, sensing and medical devices.
-
-This portfolio showcases projects in robotics, signal processing, machine learning, PCB design and simulation, from university projects to industry work.
+Biomedical Engineering undergraduate at the University of Kent, with interests in software, robotics, embedded systems, sensing and medical devices.
+This portfolio showcases projects in robotics, signal processing, machine learning, embedded software, PCB design and simulation, from university projects to industry work.
 
 ## Industry Experience
 
-### Medical simulations Intern, LHUSTEK Health Technology Incubation Centre and Vital Simulation Center, Lokman Hekim University, Ankara
+### Medical simulations Intern, LHUSTEK Health Technology Incubation Centre and Vital Simulation Center
 July 2 2026 to July 31 2026
 ([view project](EMG%20gesture%20classification/))
 
-- Built an EMG gesture classification pipeline in Python, decoding hand gestures from surface EMG signals using the public Ninapro DB1 dataset as a first step towards myoelectric prosthetic control 
+- Built an EMG gesture classification pipeline in Python(pandas, NumPy, scikit-learn),decoding hand gestures from surface EMG signals using the public Ninapro DB1 dataset as a first step towards myoelectric prosthetic control 
   - Random Forest reached 97.92% accuracy on a single subject, confirmed at 95.36% ± 2.44% with 5 fold cross-validation
   - Tested on an unseen subject, where accuracy dropped to 67%, and analysed whether this came from inter subject variability or data scarcity
 - Contributed to a comparative research report benchmarking the Vital Simulation Center against internationally accredited simulation centres (WISER, SIMS, CAMES)
 - Wrote a blog post for LHUSTEK on biomedical engineering entrepreneurship, covering idea validation, medical device regulation (EU MDR, UK UKCA/MHRA, Turkey TITCK) and commercialisation
 - Skills: Python, scikit-learn, signal processing, machine learning, research and benchmarking, medical device regulation, technical writing
 
-### Research Intern, University of Kent, Engineering labs
+### Research Intern,University of Kent 
 December 2024 to February 2025
 [View project](Capacitive%20cell%20growth%20sensor/)
 
@@ -84,15 +83,9 @@ Medical device design, biosignal processing, biomechanics, medical device regula
 
 ## Career Interests
 
-Industry roles and graduate study in:
-
+- Software engineering and infrastructure
 - Robotics and automation
--  AI and machine learning for engineering, especially applying it to sensor data, signal processing and robotic control
+- AI and machine learning for engineering, especially applying it to sensor data, signal processing and robotic control
 - Embedded systems and sensing
 - Medical devices
 - General engineering roles in design, testing and development
-
-## Contact
-
-- Email: le.matri@outlook.com
-- LinkedIn: https://www.linkedin.com/in/leila-elmatri-355023308?utm_source=share_via&utm_content=profile&utm_medium=member_ios 
