@@ -6,7 +6,7 @@ This portfolio showcases projects in robotics, signal processing, machine learni
 
 ## Industry Experience
 
-### Medical simulations Intern, LHUSTEK Health Technology Incubation Centre and Vital Simulation Center
+### Research and Data Analysis Intern, LHUSTEK, Lokman Hekim University
 July 2 2026 to July 31 2026
 ([view project](EMG%20gesture%20classification/))
 
