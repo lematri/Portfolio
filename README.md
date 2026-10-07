@@ -66,6 +66,9 @@ Retina scanners in high security settings can sometimes be fooled by a copy or p
 **Programming & Data Analysis**
 Python, C++, MATLAB, R
 
+**Libraries & Tools**
+pandas, NumPy, scikit-learn
+
 **Signal Processing & Machine Learning**
 Biosignal processing (EMG), feature extraction, Random Forest, SVM, cross-validation
 
